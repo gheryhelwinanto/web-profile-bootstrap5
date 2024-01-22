@@ -1,0 +1,35 @@
+@import '../node_modules/bootstrap/scss/functions';
+
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/variables-dark';
+
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// )
+
+// my custom-colors
+$custom-colors: (
+  'litegreen': #43766c,
+  'subcolor': #76453b,
+  'walter': #f8fae5,
+);
+// merging my custom-colors into theme-colors
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+.gel1 {
+  margin-top: -3rem;
+}
+
+// main bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// my personal font use
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+$display-font-family: 'Hammersmith One', sans-serif;
